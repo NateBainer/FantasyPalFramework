@@ -24,8 +24,8 @@
     "cookie-session": "^2.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.3",
-    "sass": "^1.35.1"
-
+    "sass": "^1.35.1",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "chai": "^4.3.6",

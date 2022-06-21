@@ -1,16 +1,20 @@
 //requires
 const express = require("express");
+const favicon = require('serve-favicon')
+const path = require('path')
 const bcrypt =require("bcryptjs");
 const cookieSession = require("cookie-session");
 const bodyParser = require("body-parser");
-const { generateRandomString, emailCheck, schedForUser } = require('./helpers');
+const { generateRandomString, emailCheck, schedForUser, scheduleComparison } = require('./helpers');
 // const sassMiddleware = require("./lib/sass-middleware");
 
 
+// Add your routes here, etc.
 
 //server info
 const app = express();
 const PORT = 8080; // default port 8080
+// app.use(favicon(path.join(docs, 'FP Favicon.webp')))
 
 // app.use(
 //   "/styles",
@@ -41,6 +45,10 @@ app.use(cookieSession( {
 }));
 app.set("view engine", "ejs");
 
+// use scheduleComparison in 8080/sched/new
+app.use("./helpers.js", function(req, res) {
+  
+})
 
 
 //GET CALLS
