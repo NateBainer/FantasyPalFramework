@@ -16,11 +16,13 @@
   Make sure you have the following dependencies installed (these versions or newer) with npm install
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.2",
+    "bootstrap": "^5.1.3",
     "cookie-session": "^2.0.0",
-    "ejs": "^3.1.7",
+    "ejs": "^3.1.6",
     "express": "^4.17.3",
-    "method-override": "^3.0.0"
-    "sass": "^1.35.1"
+    "jquery": "^3.6.0",
+    "sass": "^1.35.1",
+    "serve-favicon": "^2.5.0"
 
 
 ### OPERATING INSTRUCTIONS
